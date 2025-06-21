@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "Large Data Transfer",
+  "severity": "HIGH",
+  "description": "Unusually large volume of data transferred.",
+  "suggested_actions": [
+    "Inspect data, block transfer, user forensics"
+  ]
+}

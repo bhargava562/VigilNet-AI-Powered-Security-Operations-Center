@@ -1,0 +1,19 @@
+{
+  "cpu_utilization": {"normal_max": 80},
+  "network_connection": {"normal_max_bytes": 100000},
+  "user_login_attempt": {"normal_max_failed_attempts_per_minute": 3},
+  "file_access": {"high_access_threshold": 100},
+  "dns_query": {"unusual_tld": [".ru", ".cn", ".xyz"]},
+  "data_transfer": {"large_transfer_threshold_mb": 50},
+  "registry_access": {
+    "unusual_key_patterns": [
+      "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+    ]
+  },
+  "process_creation": {"suspicious_process_names": ["powershell.exe", "cmd.exe", "wscript.exe"]},
+  "netflow_event": {"high_flow_count_threshold": 500},
+  "syslog_event": {"suspicious_keywords": ["fail", "error", "malware", "unauthorized"]},
+  "web_activity": {"malicious_domains": ["examplemalware.com", "phishing.net"]},
+  "app_usage": {"unusual_app_usage_time_hours": [0, 1, 2, 3, 4, 5, 23]}
+}

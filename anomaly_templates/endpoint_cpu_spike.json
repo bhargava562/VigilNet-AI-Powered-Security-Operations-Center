@@ -1,0 +1,9 @@
+{
+  "anomaly_type": "High CPU Utilization",
+  "severity": "MEDIUM",
+  "description": "Unusual CPU spike detected on endpoint.",
+  "suggested_actions": [
+    "Investigate process",
+    "Run antivirus scan"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "Unusual Application Usage Time",
+  "severity": "LOW",
+  "description": "Application usage outside of expected operational hours.",
+  "suggested_actions": [
+    "Verify user activity, confirm business need"
+  ]
+}

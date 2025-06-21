@@ -1,0 +1,12 @@
+[
+  {
+    "anomaly_type": "login_failure_spike",
+    "event_type": "user_login_attempt",
+    "username": "johndoe",
+    "status": "failed",
+    "count": 7,
+    "source_ip": "192.168.1.5",
+    "severity": "MEDIUM",
+    "description": "Multiple failed login attempts for user 'johndoe'."
+  }
+]

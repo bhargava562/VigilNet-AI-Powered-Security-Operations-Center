@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "Unusual File Access Pattern",
+  "severity": "MEDIUM",
+  "description": "A user accessed an unusually high number of files or sensitive files.",
+  "suggested_actions": [
+    "Review user activity, check file permissions"
+  ]
+}

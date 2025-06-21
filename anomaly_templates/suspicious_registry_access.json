@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "Suspicious Registry Access",
+  "severity": "HIGH",
+  "description": "Unauthorized or suspicious modification attempt on critical registry keys.",
+  "suggested_actions": [
+    "Rollback registry, investigate process"
+  ]
+}

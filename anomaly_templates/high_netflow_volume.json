@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "High Netflow Volume",
+  "severity": "MEDIUM",
+  "description": "Unusually high network flow observed between two hosts or to external.",
+  "suggested_actions": [
+    "Analyze flow, investigate involved systems"
+  ]
+}

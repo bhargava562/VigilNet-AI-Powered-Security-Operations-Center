@@ -1,0 +1,311 @@
+2025-06-19 15:52:44,558 - VigilNetApp - INFO - Configuration loaded and application logger initialized.
+2025-06-19 15:53:42,135 - VigilNetApp - INFO - AlertManager: All alerts and simulated actions cleared.
+2025-06-19 15:57:26,063 - VigilNetApp - INFO - Configuration loaded and application logger initialized.
+2025-06-19 15:58:50,109 - VigilNetApp - INFO - AlertManager: All alerts and simulated actions cleared.
+2025-06-19 16:01:36,190 - VigilNetApp - INFO - Configuration loaded and application logger initialized.
+2025-06-19 16:02:09,325 - VigilNetApp - INFO - AlertManager: All alerts and simulated actions cleared.
+2025-06-19 16:02:09,346 - VigilNetApp - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 16:02:25,401 - VigilNetApp - INFO - AlertManager: All alerts and simulated actions cleared.
+2025-06-19 16:02:25,404 - VigilNetApp - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 16:02:26,133 - VigilNetApp - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:20:18,707 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:20:43,406 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:24:17,336 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:24:42,997 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:31:00,364 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:31:25,371 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:32:14,772 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 18:32:14,774 - config - WARNING - BigQuery alerts client not initialized. Alerts not cleared from BigQuery.
+2025-06-19 18:32:14,796 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 18:33:36,103 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:34:00,626 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:34:36,204 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 18:34:36,206 - config - WARNING - BigQuery alerts client not initialized. Alerts not cleared from BigQuery.
+2025-06-19 18:34:36,227 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 18:37:31,576 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:37:56,069 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:38:26,579 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 18:38:26,580 - config - WARNING - BigQuery alerts client not initialized. Alerts not cleared from BigQuery.
+2025-06-19 18:38:26,616 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 18:39:25,947 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:39:50,232 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:40:57,851 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 18:40:57,853 - config - WARNING - BigQuery alerts client not initialized. Alerts not cleared from BigQuery.
+2025-06-19 18:40:57,885 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 18:42:33,500 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 18:42:58,265 - config - ERROR - Failed to connect to BigQuery alerts table: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-06-19 18:43:44,999 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 18:43:45,000 - config - WARNING - BigQuery alerts client not initialized. Alerts not cleared from BigQuery.
+2025-06-19 18:43:45,031 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 18:43:53,513 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 18:43:53,514 - config - WARNING - BigQuery alerts client not initialized. Alerts not cleared from BigQuery.
+2025-06-19 18:43:53,519 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 18:43:54,615 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 20:10:14,211 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 20:10:15,616 - config - INFO - Successfully connected to BigQuery alerts table: /projects/jovial-style-460608-f9/datasets/vigilnet_alerts/tables/alerts
+2025-06-19 20:10:59,559 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 20:11:00,305 - config - ERROR - Error clearing alerts from BigQuery: 403 Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.; reason: billingNotEnabled, message: Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+
+Location: asia-south1
+Job ID: 565a49e4-65fd-4be8-a774-f2f2664e3265
+
+2025-06-19 20:11:00,338 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 20:11:10,577 - config - INFO - All in-memory alerts and simulated actions cleared.
+2025-06-19 20:11:11,066 - config - ERROR - Error clearing alerts from BigQuery: 403 Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.; reason: billingNotEnabled, message: Billing has not been enabled for this project. Enable billing at https://console.cloud.google.com/billing. DML queries are not allowed in the free tier. Set up a billing account to remove this restriction.
+
+Location: asia-south1
+Job ID: 0b8ec39f-44c2-4d8d-9e01-5b9417105158
+
+2025-06-19 20:11:11,071 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 20:11:12,283 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:04:29,533 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:05:25,173 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 21:05:31,905 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 21:05:32,855 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:07:13,819 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:08:17,365 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 21:08:23,799 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-19 21:08:24,815 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:27:41,212 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:27:41,419 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-19 21:36:14,627 - config - INFO - Configuration loaded and application logger initialized.
+2025-06-19 21:36:14,810 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-19 21:39:23,527 - config - INFO - Initial setup complete: Data, alerts, and simulation state reset.
+2025-06-20 10:16:03,353 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 10:16:03,661 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 10:34:53,594 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 10:34:53,755 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 12:15:16,767 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 12:15:16,959 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 12:16:07,046 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 12:16:07,164 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 12:46:12,137 - config - INFO - Configuration loaded and validated.
+2025-06-20 12:48:30,932 - config - INFO - Configuration loaded and validated.
+2025-06-20 12:48:31,054 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 12:51:18,665 - config - INFO - Configuration loaded and validated.
+2025-06-20 12:51:18,829 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 13:08:20,733 - config - INFO - Configuration loaded and validated.
+2025-06-20 13:08:20,888 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 13:09:25,109 - config - INFO - All alerts cleared.
+2025-06-20 13:09:25,111 - config - INFO - All simulated actions cleared.
+2025-06-20 13:11:31,015 - config - INFO - Configuration loaded and validated.
+2025-06-20 13:11:31,206 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 13:12:12,941 - config - INFO - All alerts cleared.
+2025-06-20 13:12:12,942 - config - INFO - All simulated actions cleared.
+2025-06-20 13:57:44,699 - config - INFO - Configuration loaded and validated.
+2025-06-20 13:57:44,889 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 13:58:47,082 - config - INFO - All alerts cleared.
+2025-06-20 13:58:47,084 - config - INFO - All simulated actions cleared.
+2025-06-20 15:37:02,799 - config - INFO - Configuration loaded and validated.
+2025-06-20 15:37:03,561 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 15:46:01,089 - config - INFO - Configuration loaded and validated.
+2025-06-20 15:46:01,371 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 15:47:09,143 - config - INFO - All alerts cleared.
+2025-06-20 15:47:09,145 - config - INFO - All simulated actions cleared.
+2025-06-20 15:49:42,173 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 15:49:42,174 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 15:49:42,425 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 16:03:07,052 - config - INFO - All alerts cleared.
+2025-06-20 16:03:07,059 - config - INFO - All simulated actions cleared.
+2025-06-20 16:09:46,395 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 16:09:46,399 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 16:09:47,048 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 16:29:23,041 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 16:29:23,043 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 16:29:23,262 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 16:42:12,462 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 16:42:12,465 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 16:42:12,708 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 16:53:08,716 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 16:53:08,717 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 16:53:08,927 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 16:54:04,262 - config - INFO - All alerts cleared.
+2025-06-20 16:54:04,263 - config - INFO - All simulated actions cleared.
+2025-06-20 17:30:53,603 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 17:30:53,604 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 17:30:53,747 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 17:32:11,441 - config - INFO - All alerts cleared.
+2025-06-20 17:32:11,441 - config - INFO - All simulated actions cleared.
+2025-06-20 17:42:43,115 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 17:42:43,117 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 17:42:43,287 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 17:44:36,376 - config - INFO - All alerts cleared.
+2025-06-20 17:44:36,377 - config - INFO - All simulated actions cleared.
+2025-06-20 17:59:42,881 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 17:59:42,883 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 17:59:43,072 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 18:00:38,799 - config - INFO - All alerts cleared.
+2025-06-20 18:00:38,800 - config - INFO - All simulated actions cleared.
+2025-06-20 18:09:59,465 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 18:09:59,466 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 18:09:59,617 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 18:11:27,680 - config - INFO - All alerts cleared.
+2025-06-20 18:11:27,680 - config - INFO - All simulated actions cleared.
+2025-06-20 18:15:48,141 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 18:15:48,142 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 18:15:48,336 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 18:16:54,461 - config - INFO - All alerts cleared.
+2025-06-20 18:16:54,462 - config - INFO - All simulated actions cleared.
+2025-06-20 18:22:49,171 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 18:22:49,172 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 18:22:49,331 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 18:23:42,894 - config - INFO - All alerts cleared.
+2025-06-20 18:23:42,894 - config - INFO - All simulated actions cleared.
+2025-06-20 19:35:19,285 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 19:35:19,288 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 19:35:19,467 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 19:36:07,917 - config - INFO - All alerts cleared.
+2025-06-20 19:36:07,919 - config - INFO - All simulated actions cleared.
+2025-06-20 20:17:47,592 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 20:17:47,594 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 20:17:47,778 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 20:18:37,546 - config - INFO - All alerts cleared.
+2025-06-20 20:18:37,553 - config - INFO - All simulated actions cleared.
+2025-06-20 20:44:35,014 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 20:44:35,015 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 20:44:35,178 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 20:45:28,285 - config - INFO - All alerts cleared.
+2025-06-20 20:45:28,286 - config - INFO - All simulated actions cleared.
+2025-06-20 21:26:14,420 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 21:26:14,422 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 21:26:14,593 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 21:26:51,212 - config - INFO - All alerts cleared.
+2025-06-20 21:26:51,213 - config - INFO - All simulated actions cleared.
+2025-06-20 22:38:39,299 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 22:38:39,301 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 22:38:39,672 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 22:40:35,157 - config - INFO - All alerts cleared.
+2025-06-20 22:40:35,159 - config - INFO - All simulated actions cleared.
+2025-06-20 22:44:23,146 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 22:44:23,148 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 22:44:23,399 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 22:45:31,977 - config - INFO - All alerts cleared.
+2025-06-20 22:45:31,978 - config - INFO - All simulated actions cleared.
+2025-06-20 22:48:55,825 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 22:48:55,827 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 22:48:56,010 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 22:53:19,655 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 22:53:19,657 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 22:53:19,827 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 22:56:00,680 - config - INFO - All alerts cleared.
+2025-06-20 22:56:00,682 - config - INFO - All simulated actions cleared.
+2025-06-20 23:02:08,173 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:02:08,174 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:02:08,312 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:08:06,734 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:08:06,736 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:08:06,904 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:12:46,062 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:12:46,064 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:12:46,188 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:16:16,948 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:16:16,949 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:16:17,070 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:18:47,563 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:18:47,564 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:18:47,694 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:21:28,004 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:21:28,010 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:21:28,088 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:22:21,268 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:22:21,269 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:22:21,402 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:27:06,329 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:27:06,330 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:27:06,464 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-20 23:35:13,705 - config - INFO - Configuration loaded and logger initialized.
+2025-06-20 23:35:13,706 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-20 23:35:13,884 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 08:18:36,477 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 08:18:36,481 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 08:18:37,329 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 08:38:18,467 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 08:38:18,470 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 08:38:18,800 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 08:46:39,455 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 08:46:39,456 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 08:46:39,748 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 08:50:02,716 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 08:50:02,718 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 08:50:02,955 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 08:55:28,340 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 08:55:28,342 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 08:55:28,517 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:00:12,995 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:00:12,996 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:00:13,153 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:03:05,974 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:03:05,975 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:03:06,152 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:06:12,990 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:06:12,992 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:06:13,151 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:10:26,818 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:10:26,819 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:10:27,000 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:13:15,744 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:13:15,750 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:13:15,947 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:17:30,849 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:17:30,850 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:17:30,985 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:26:46,764 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:26:46,766 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:26:46,946 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:28:54,659 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:28:54,660 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:28:54,808 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:35:45,495 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:35:45,497 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:35:45,688 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:38:56,839 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:38:56,840 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:38:57,006 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 09:42:39,684 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 09:42:39,685 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 09:42:39,851 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 10:08:48,488 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 10:08:48,490 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 10:08:48,659 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 10:22:30,944 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 10:22:30,944 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 10:22:31,116 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 10:38:30,787 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 10:38:30,787 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 10:38:30,960 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 10:43:53,853 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 10:43:53,854 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 10:43:54,014 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 10:52:59,427 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 10:52:59,428 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 10:52:59,557 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 11:07:20,100 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 11:07:20,101 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 11:07:20,952 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 11:36:03,047 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 11:36:03,048 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 11:36:03,216 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 11:39:44,759 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 11:39:44,760 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 11:39:44,925 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 11:42:46,363 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 11:42:46,364 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 11:42:46,494 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 11:47:51,681 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 11:47:51,683 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 11:47:51,843 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 11:53:20,461 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 11:53:20,462 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 11:53:20,572 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 12:11:27,726 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 12:11:27,727 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 12:11:27,908 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 12:18:48,975 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 12:18:48,977 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 12:18:49,124 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 12:37:19,311 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 12:37:19,313 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 12:37:19,561 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 12:51:35,574 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 12:51:35,576 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 12:51:35,742 - config - INFO - AlertManager initialized with in-memory stores.

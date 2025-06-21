@@ -1,0 +1,9 @@
+{
+  "anomaly_type": "Connection to Malicious IP",
+  "severity": "CRITICAL",
+  "description": "Attempted communication with a known malicious IP address.",
+  "suggested_actions": [
+    "Block IP",
+    "Isolate host"
+  ]
+}

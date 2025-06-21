@@ -1,0 +1,7 @@
+google-adk
+streamlit
+pandas
+scikit-learn
+python-dotenv
+google-generativeai
+nest_asyncio

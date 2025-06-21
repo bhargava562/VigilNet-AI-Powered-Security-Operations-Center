@@ -1,0 +1,10 @@
+{
+  "anomaly_type": "Brute Force Attempt",
+  "severity": "CRITICAL",
+  "description": "Multiple failed login attempts detected for a user account.",
+  "suggested_actions": [
+    "Lock account",
+    "Reset password",
+    "Investigate source IP"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "anomaly_type": "login_failure_spike",
+    "event_type": "user_login_attempt",
+    "username": "johndoe",
+    "status": "failed",
+    "count": 7,
+    "source_ip": "192.168.1.5",
+    "severity": "MEDIUM",
+    "description": "Multiple failed login attempts for user 'johndoe' from a single IP, potential brute-force."
+  },
+  {
+    "anomaly_type": "unusual_login_time",
+    "event_type": "user_login_attempt",
+    "username": "sysadmin",
+    "status": "success",
+    "login_time_hour": 3,
+    "source_ip": "10.0.0.10",
+    "severity": "LOW",
+    "description": "Successful login by 'sysadmin' outside normal working hours (3 AM)."
+  }
+]

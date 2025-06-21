@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "DNS Query to Unusual TLD",
+  "severity": "MEDIUM",
+  "description": "Frequent DNS queries to top-level domains associated with malicious activity.",
+  "suggested_actions": [
+    "Block TLDs, investigate DNS logs"
+  ]
+}

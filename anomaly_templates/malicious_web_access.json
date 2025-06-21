@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "Access to Malicious Website",
+  "severity": "CRITICAL",
+  "description": "User attempted or succeeded in accessing a known malicious website.",
+  "suggested_actions": [
+    "Block domain, user awareness training, full endpoint scan"
+  ]
+}

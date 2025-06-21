@@ -1,0 +1,11 @@
+[
+  {
+    "anomaly_type": "unusual_login_time",
+    "event_type": "user_login_attempt",
+    "username": "sysadmin",
+    "status": "success",
+    "login_time_hour": 3,
+    "source_ip": "10.0.0.2",
+    "severity": "LOW"
+  }
+]

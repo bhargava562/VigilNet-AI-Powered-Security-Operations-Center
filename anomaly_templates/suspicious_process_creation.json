@@ -1,0 +1,10 @@
+{
+  "anomaly_type": "Suspicious Process Creation",
+  "severity": "CRITICAL",
+  "description": "A suspicious process was created on an endpoint.",
+  "suggested_actions": [
+    "Isolate host",
+    "Terminate process",
+    "Full system scan"
+  ]
+}

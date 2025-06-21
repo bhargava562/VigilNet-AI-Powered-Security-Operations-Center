@@ -1,0 +1,8 @@
+{
+  "anomaly_type": "Suspicious Syslog Message",
+  "severity": "LOW",
+  "description": "Syslog message contains keywords indicative of potential security issues.",
+  "suggested_actions": [
+    "Review full log context"
+  ]
+}
