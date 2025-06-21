@@ -1,71 +1,52 @@
 import logging
-from typing import List, Optional
-from utils.security_models import SecurityEvent, Anomaly, Severity, AlertStatus
+from typing import Optional
+from utils.security_models import SecurityEvent, Anomaly
 import config
 from google.adk.agents import Agent
-from agents.tools.security_tools import security_tools # Import the security_tools list
-from google.adk.runners import Runner
+from agents.tools.security_tools import security_tools
 from google.adk.sessions import InMemorySessionService
 import uuid
-from collections import defaultdict
-from datetime import timedelta
-import json
 from google.genai import types
-from datetime import datetime
 import asyncio
 
 logger = logging.getLogger(__name__)
+
+if not hasattr(config, 'APP_NAME'):
+    config.APP_NAME = "SecurityAnalyticsPlatform"
 
 class UserBehaviorAgent:
     def __init__(self, alert_manager_instance, session_service: InMemorySessionService):
         self.name = config.USER_BEHAVIOR_AGENT_NAME
         self.alert_manager = alert_manager_instance
         self.session_service = session_service
-
         self.adk_agent = Agent(
             name=self.name,
             model="gemini-2.5-flash",
             instruction=(
-                "You are a User Behavior Analytics Agent. Your primary role is to monitor "
-                "user activity events (e.g., login attempts, file access, application usage, web activity). "
-                "For each event you receive, use the `tool_detect_user_behavior_anomaly` function to check for anomalies. "
-                "If `tool_detect_user_behavior_anomaly` returns an anomaly (a JSON string representing it), then immediately "
-                "use the `tool_create_alert` function to create a new alert. "
-                "Provide a descriptive title and description for the alert, categorize its severity (LOW, MEDIUM, HIGH, CRITICAL), "
-                "and specify the source agent (which is 'UserBehaviorAgent'). "
-                "The anomaly details (JSON string) should be included directly in the `anomalies` parameter. "
-                "After creating an alert, you MUST use the `tool_update_alert_status` function to set the alert's status to 'TRIAGED'."
+                "You are a User Behavior Agent. Monitor user activity. "
+                "Use `tool_detect_user_behavior_anomaly`. If it returns an Anomaly object, act accordingly."
             ),
-            tools=security_tools, # Pass the entire list of FunctionTool objects
+            tools=security_tools
         )
 
-    async def process_event(self, event: SecurityEvent): # Now an async method
-        logger.info(f"{self.name} received event {event.event_id} of type {event.event_type} at {event.timestamp}")
-        agent_response_content = ""
+    async def process_event(self, event: SecurityEvent) -> Optional[str]:
         try:
-            session = self.session_service.get_session(event.session_id)
-            if not session:
-                logger.error(f"Session {event.session_id} not found for event {event.event_id}")
-                return
-
-            event_json = json.dumps(event.to_dict())
-
-            async for response_event in self.adk_agent.run_async(event_json, session):
+            event_json = event.model_dump_json()
+            async for response_event in self.adk_agent.run_async(event_json):
                 if response_event.type == types.EventType.FINAL_RESPONSE:
                     if response_event.content and response_event.content.parts:
-                        agent_response_content = response_event.content.parts[0].text
-                        logger.info(f"{self.name} ADK Agent Final Response: {agent_response_content}")
-                    break
-                elif response_event.type == types.EventType.TOOL_CODE:
-                    logger.info(f"{self.name} ADK Agent Tool Code Generated: {response_event.tool_code.code}")
-                elif response_event.type == types.EventType.FUNCTION_CALL:
-                    func_call = response_event.get_function_calls()[0]
-                    logger.info(f"{self.name} ADK Agent requested tool call: {func_call.name}({func_call.args})")
-                elif response_event.type == types.EventType.FUNCTION_RESPONSE:
-                    func_resp = response_event.get_function_responses()[0]
-                    logger.info(f"{self.name} ADK Agent received tool response: {func_resp.name} -> {func_resp.response}")
-            return agent_response_content
-
+                        anomaly = response_event.content.parts[0]
+                        if isinstance(anomaly, Anomaly):
+                            logger.info(f"{self.name} detected anomaly: {anomaly.anomaly_type}")
+                            self.alert_manager.create_alert(
+                                title=anomaly.anomaly_type,
+                                description=anomaly.description,
+                                severity=anomaly.severity,
+                                source_agent=self.name,
+                                anomalies=[anomaly],
+                                suggested_actions=["Review user's activity logs for suspicious behavior."]
+                            )
+                            return f"Anomaly detected: {anomaly.anomaly_type}"
         except Exception as e:
             logger.error(f"{self.name} failed to process event {event.event_id}: {e}")
-
+            return None

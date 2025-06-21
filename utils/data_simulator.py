@@ -20,6 +20,7 @@ from utils.security_models import SecurityEvent, Severity
 logger = logging.getLogger(__name__)
 
 def generate_security_event(event_type: str, timestamp: datetime, host_id: str, user: str, source_ip: str,
+                           session_id: str, # Added session_id parameter
                            dest_ip: Optional[str] = None, process_name: Optional[str] = None,
                            file_path: Optional[str] = None, protocol: Optional[str] = None,
                            dest_port: Optional[int] = None, bytes_transferred: Optional[int] = None,
@@ -31,6 +32,7 @@ def generate_security_event(event_type: str, timestamp: datetime, host_id: str, 
         timestamp=timestamp,
         event_id=event_id,
         event_type=event_type,
+        session_id=session_id, # Pass session_id to the SecurityEvent constructor
         host_id=host_id,
         user=user,
         source_ip=source_ip,
@@ -58,6 +60,10 @@ def simulate_data_batch(current_time: datetime, num_events: int) -> List[Securit
         "process_creation", "netflow_event", "syslog_event",
         "web_activity", "app_usage", "port_scan_attempt", "malware_execution"
     ]
+
+    # Generate a single session_id for the entire batch to simulate a continuous user/system session
+    # Alternatively, you could generate a new session_id per event or per user/host if needed
+    batch_session_id = str(uuid.uuid4()) 
 
     for _ in range(num_events):
         event_type = random.choice(event_types)
@@ -149,6 +155,7 @@ def simulate_data_batch(current_time: datetime, num_events: int) -> List[Securit
             host_id=host_id,
             user=user,
             source_ip=source_ip,
+            session_id=batch_session_id, # Pass the generated session_id
             dest_ip=dest_ip,
             process_name=process_name,
             file_path=file_path,

@@ -21,6 +21,8 @@ class SecurityEvent(BaseModel):
     timestamp: datetime
     event_id: str
     event_type: str
+    # Add session_id to SecurityEvent model
+    session_id: str = Field(default_factory=lambda: str(uuid.uuid4())) # Assign a default UUID
     host_id: Optional[str] = None
     source_ip: Optional[str] = None
     dest_ip: Optional[str] = None
@@ -40,6 +42,15 @@ class SecurityEvent(BaseModel):
             return v
         except ValueError:
             raise ValueError("event_id must be a valid UUID")
+
+    @validator('session_id')
+    def validate_session_id(cls, v):
+        try:
+            uuid.UUID(v)
+            return v
+        except ValueError:
+            raise ValueError("session_id must be a valid UUID")
+
 
 class Anomaly(BaseModel):
     """Represents a detected anomaly."""
@@ -65,6 +76,8 @@ class Alert(BaseModel):
     assignee: Optional[str] = None
     resolved_at: Optional[datetime] = None
     resolution_notes: Optional[str] = None
+    # Add session_id to Alert model so orchestrator can access it
+    session_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
 
 class SimulatedAction(BaseModel):
     """Represents a simulated action taken by an agent."""
@@ -85,10 +98,12 @@ class SimulatedAction(BaseModel):
 
 if __name__ == "__main__":
     # Example Usage:
+    # Now includes session_id
     event = SecurityEvent(
         timestamp=datetime.now(),
         event_id=str(uuid.uuid4()),
         event_type="network_connection",
+        session_id=str(uuid.uuid4()), # Explicitly setting session_id
         source_ip="192.168.1.10",
         dest_ip="8.8.8.8",
         user="testuser",
@@ -116,7 +131,8 @@ if __name__ == "__main__":
         source_agent="NetworkAgent",
         anomalies=[anomaly],
         suggested_actions=["Block IP", "Investigate Host"],
-        status=AlertStatus.OPEN
+        status=AlertStatus.OPEN,
+        session_id=event.session_id # Pass session_id from event to alert
     )
     print(f"\nAlert: {alert.json(indent=2)}")
     
