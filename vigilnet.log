@@ -423,3 +423,27 @@ Job ID: 0b8ec39f-44c2-4d8d-9e01-5b9417105158
 2025-06-21 18:30:35,445 - config - INFO - Configuration loaded and logger initialized.
 2025-06-21 18:30:35,448 - config - INFO - Validated and created directories: data/, anomaly_templates/
 2025-06-21 18:30:35,892 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 18:50:48,533 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 18:50:48,538 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 18:50:49,172 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 19:14:32,672 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 19:14:32,674 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 19:14:32,966 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 19:43:33,099 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 19:43:33,101 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 19:43:33,424 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 20:03:46,308 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 20:03:46,313 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 20:03:47,051 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 20:46:09,924 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 20:46:09,927 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 20:46:10,482 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 21:00:36,272 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 21:00:36,277 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 21:00:37,003 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 21:22:41,025 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 21:22:41,027 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 21:22:41,211 - config - INFO - AlertManager initialized with in-memory stores.
+2025-06-21 21:47:10,434 - config - INFO - Configuration loaded and logger initialized.
+2025-06-21 21:47:10,435 - config - INFO - Validated and created directories: data/, anomaly_templates/
+2025-06-21 21:47:10,606 - config - INFO - AlertManager initialized with in-memory stores.

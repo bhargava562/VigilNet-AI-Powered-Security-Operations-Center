@@ -1,3 +1,5 @@
+# Filename: agents/tools/security_tools.py
+
 import json
 import logging
 from typing import List, Optional
@@ -5,12 +7,10 @@ from datetime import datetime
 import sys
 import os
 
-# Add root to sys.path for module resolution
 script_dir = os.path.dirname(__file__)
 project_root = os.path.abspath(os.path.join(script_dir, os.pardir, os.pardir))
 sys.path.insert(0, project_root)
 
-# Imports
 from utils.anomaly_detector import (
     detect_endpoint_anomaly,
     detect_network_anomaly,
@@ -22,7 +22,7 @@ from google.adk.tools import FunctionTool
 
 logger = logging.getLogger(__name__)
 
-def tool_detect_endpoint_anomaly(event_json: str) -> Optional[Anomaly]:
+def tool_detect_endpoint_anomaly(event_json: str) -> Optional[dict]:
     try:
         event_dict = json.loads(event_json)
         if isinstance(event_dict.get("timestamp"), str):
@@ -30,13 +30,22 @@ def tool_detect_endpoint_anomaly(event_json: str) -> Optional[Anomaly]:
         event = SecurityEvent(**event_dict)
         anomaly = detect_endpoint_anomaly(event)
         if anomaly:
-            logger.info(f"[Endpoint] Anomaly Detected: {anomaly.anomaly_type} -> {anomaly.triggered_by_event_id}")
-        return anomaly
+            # Return the anomaly as a dictionary
+            return {
+                "anomaly_id": anomaly.anomaly_id,
+                "timestamp": anomaly.timestamp.isoformat(),
+                "anomaly_type": anomaly.anomaly_type,
+                "severity": anomaly.severity.value,
+                "description": anomaly.description,
+                "triggered_by_event_id": anomaly.triggered_by_event_id,
+                "context": anomaly.context
+            }
+        return None
     except Exception as e:
         logger.error(f"tool_detect_endpoint_anomaly error: {e}")
         return None
 
-def tool_detect_network_anomaly(event_json: str) -> Optional[Anomaly]:
+def tool_detect_network_anomaly(event_json: str) -> Optional[dict]:
     try:
         event_dict = json.loads(event_json)
         if isinstance(event_dict.get("timestamp"), str):
@@ -44,13 +53,22 @@ def tool_detect_network_anomaly(event_json: str) -> Optional[Anomaly]:
         event = SecurityEvent(**event_dict)
         anomaly = detect_network_anomaly(event)
         if anomaly:
-            logger.info(f"[Network] Anomaly Detected: {anomaly.anomaly_type} -> {anomaly.triggered_by_event_id}")
-        return anomaly
+            # Return the anomaly as a dictionary
+            return {
+                "anomaly_id": anomaly.anomaly_id,
+                "timestamp": anomaly.timestamp.isoformat(),
+                "anomaly_type": anomaly.anomaly_type,
+                "severity": anomaly.severity.value,
+                "description": anomaly.description,
+                "triggered_by_event_id": anomaly.triggered_by_event_id,
+                "context": anomaly.context
+            }
+        return None
     except Exception as e:
         logger.error(f"tool_detect_network_anomaly error: {e}")
         return None
 
-def tool_detect_user_behavior_anomaly(event_json: str) -> Optional[Anomaly]:
+def tool_detect_user_behavior_anomaly(event_json: str) -> Optional[dict]:
     try:
         event_dict = json.loads(event_json)
         if isinstance(event_dict.get("timestamp"), str):
@@ -58,8 +76,17 @@ def tool_detect_user_behavior_anomaly(event_json: str) -> Optional[Anomaly]:
         event = SecurityEvent(**event_dict)
         anomaly = detect_user_behavior_anomaly(event)
         if anomaly:
-            logger.info(f"[User Behavior] Anomaly Detected: {anomaly.anomaly_type} -> {anomaly.triggered_by_event_id}")
-        return anomaly
+            # Return the anomaly as a dictionary
+            return {
+                "anomaly_id": anomaly.anomaly_id,
+                "timestamp": anomaly.timestamp.isoformat(),
+                "anomaly_type": anomaly.anomaly_type,
+                "severity": anomaly.severity.value,
+                "description": anomaly.description,
+                "triggered_by_event_id": anomaly.triggered_by_event_id,
+                "context": anomaly.context
+            }
+        return None
     except Exception as e:
         logger.error(f"tool_detect_user_behavior_anomaly error: {e}")
         return None
