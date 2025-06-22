@@ -2,14 +2,15 @@ import os
 import logging
 import json
 from dotenv import load_dotenv
+import streamlit as st
 
 # Load environment variables
 load_dotenv()
 
 # --- API Keys & Credentials ---
-ADK_API_KEY = os.getenv("ADK_API_KEY", "your_dummy_adk_api_key_if_not_set")
-STREAMLIT_ADMIN_USER = os.getenv("STREAMLIT_ADMIN_USER", "admin")
-STREAMLIT_ADMIN_PASS = os.getenv("STREAMLIT_ADMIN_PASS", "supersecurepassword123")
+ADK_API_KEY = st.secrets["ADK_API_KEY"]
+STREAMLIT_ADMIN_USER = st.secrets["STREAMLIT_ADMIN_USER"]
+STREAMLIT_ADMIN_PASS = st.secrets["STREAMLIT_ADMIN_PASS"]
 
 KNOWN_MALICIOUS_IPS = ["203.0.113.5", "198.51.100.10"]
 
